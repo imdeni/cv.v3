@@ -15,7 +15,7 @@ export default function ContentExperience({ blnAwal, blnAkhir,
         window.open(link2, '_blank');
     };
     return (
-        <div className="hover:scale-105 w-full rounded-xl border border-zinc-800 shadow shadows
+        <div className="hover:scale-105 w-full rounded-xl border-b-4 border-r-4 border-zinc-800 shadow shadows
     bg-[linear-gradient(45deg,transparent_25%,rgba(68,68,68,.9)_50%,transparent_75%,transparent_100%)] 
     bg-zinc-900  overflow-hidden 
     bg-[length:250%_250%,100%_100%] 

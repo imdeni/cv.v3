@@ -1,6 +1,6 @@
 export default function ContentAbout() {
     return (
-        <div className="hover:scale-105 w-full rounded-xl border border-zinc-800
+        <div className="w-full rounded-xl border border-zinc-800
     bg-[linear-gradient(45deg,transparent_25%,rgba(68,68,68,.9)_50%,transparent_75%,transparent_100%)] 
     bg-zinc-800  overflow-hidden 
     bg-[length:250%_250%,100%_100%] 

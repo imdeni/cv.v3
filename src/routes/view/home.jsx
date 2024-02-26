@@ -355,15 +355,15 @@ export default function Home() {
               <h1 className="text-lg font-medium tracking-tight text-cyan-parent">Project</h1>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <IsiConentProject title="CV Deni (v.1)" description="My website CV and Portfolio version 1." show="Show Website" link="" />
-              <IsiConentProject title="CV Deni (v.2)" description="My website CV and Portfolio version 2." show="Show Website" link="" />
-              <IsiConentProject title="Saloka" description="Saloka website company profile. Test for applying for a job in Saloka, creating a company profile website for one week." show="Show Website" link="" />
-              <IsiConentProject title="SI Apotek" description="SI Apotek is an information system that is used for monitoring pharmacy data. System is also equipped with daily and periodical report features." show="Show Website" link="" />
-              <IsiConentProject title="SI Maiga" description="SI Maiga is an information system used for monitoring and determine student achievement, based on the average value of students which is calculated automatically by the system." show="Show Website" link="" />
-              <IsiConentProject title="SI SPK" description="SI SPK is a decision support system that is used to determine prospective recipients of the Family Hope Program (PKH) automatically by a system based on the SMART algorithm (Simple Multi Attribute Ratting Technique)." show="Show Website" link="" />
-              <IsiConentProject title="SI Koperasi" description="SI Koperasi is a Cooperative Information System used to record cooperative activities per three months with calculations calculated by the system ." show="Show Website" link="" />
-              <IsiConentProject title="SI Toko" description="SI Toko is an information system used in stores that aims to manage stock of goods, sales and purchasing of goods." show="Show Website" link="" />
-              <IsiConentProject title="SI Motor" description="SI Motor is a Website-based Motorbike Rental Information System." show="Show Website" link="" />
+              <IsiConentProject title="CV Deni (v.1)" description="My website CV and Portfolio version 1." show="Show Website" link="https://deniachmad.com/cv1/" />
+              <IsiConentProject title="CV Deni (v.2)" description="My website CV and Portfolio version 2." show="Show Website" link="https://deniachmad.com/cv2/" />
+              <IsiConentProject title="Saloka" description="Saloka website company profile. Test for applying for a job in Saloka, creating a company profile website for one week." show="Show Website" link="https://deniachmad.com/saloka/" />
+              <IsiConentProject title="SI Apotek" description="SI Apotek is an information system that is used for monitoring pharmacy data. System is also equipped with daily and periodical report features." show="Show Website" link="https://deniachmad.com/apotek/" />
+              <IsiConentProject title="SI Maiga" description="SI Maiga is an information system used for monitoring and determine student achievement, based on the average value of students which is calculated automatically by the system." show="Show Website" link="https://deniachmad.com/maiga/" />
+              <IsiConentProject title="SI SPK" description="SI SPK is a decision support system that is used to determine prospective recipients of the Family Hope Program (PKH) automatically by a system based on the SMART algorithm (Simple Multi Attribute Ratting Technique)." show="Show Website" link="https://deniachmad.com/spk/" />
+              <IsiConentProject title="SI Koperasi" description="SI Koperasi is a Cooperative Information System used to record cooperative activities per three months with calculations calculated by the system ." show="Show Website" link="https://deniachmad.com/koperasi/" />
+              <IsiConentProject title="SI Toko" description="SI Toko is an information system used in stores that aims to manage stock of goods, sales and purchasing of goods." show="Show Website" link="https://deniachmad.com/toko/" />
+              <IsiConentProject title="SI Motor" description="SI Motor is a Website-based Motorbike Rental Information System." show="Show Website" link="https://deniachmad.com/motor/" />
             </div>
           </div>
 
