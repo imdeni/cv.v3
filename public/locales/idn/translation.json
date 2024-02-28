@@ -8,5 +8,13 @@
     "Choose Language":"Pilih Bahasa",
     "idn":"Indonesia",
     "en":"Inggris",
-    "Cancel":"Batal"
+    "Cancel":"Batal",
+    "desc_about":"Saya memulai perjalanan saya sebagai software engineer dimulai dari menerima proyek kecil dalam pembuatan website dan aplikasi. Membuat website dari awal dan membuat algoritma baru merupakan pekerjaan yang menyenangkan bagi saya karena saya bisa mengetahui hal-hal baru dan juga pengetahuan baru dalam pemrograman. Jadi saya memutuskan untuk melanjutkan jalur saya sebagai insinyur perangkat lunak.",
+    "umkm_desc":"Mengembangkan aplikasi website interaktif untuk Departemen Koperasi, termasuk user interface website Koperasi yang digunakan untuk mencatat kegiatan koperasi per tiga bulan dengan perhitungan yang dihitung oleh sistem"
+    ,"umkm_t":"Dinas Koperasi Usaha kecil dan menengah mikro provinsi jawa tengah"
+    ,"freelance_desc":"Mengembangkan, memelihara, dan mengirimkan kode program untuk situs web klien"
+    ,"macanan_desc":"Mengembangkan, memelihara, dan mengirimkan kode produksi untuk situs web klien. Pemeliharaan & manajemen aplikasi desktop. Pemeliharaan basis data dan manajemen data. pemecahan masalah dan pemeliharaan perangkat lunak."
+    ,"formulatrix_desc":"Mempelajari program pendidikan c# secara intensif yang berfokus pada bahasa pemrograman C#, kerangka ASP.NET Core 7 dan mencakup teknik debugging, kerangka entitas, logger, pengujian Unit, dan pola desain. ujian praktek membuat game menggunakan c# dan membuat website menggunakan ASP.NET."
+    ,"Show Website":"Lihat Website"
+    ,"Show Certificate":"Lihat Sertifikat"
 }

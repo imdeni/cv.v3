@@ -66,72 +66,77 @@ export default function Home() {
 
         <BackgroundAnimate />
 
-        <div id="nav" className="z-40 fixed xl:inset-x-1/4 max-w-lg md:py-16 xl:-ml-[270px] 2xl:-ml-[170px] invisible lg:visible">
-          <div className="px-8 py-2 lg:py-0">
-
-            <BackgroundBarAnimate />
-
-            <HomeIntro />
-            <br />
-
-            <div className="grid grid-cols-4 gap-4 max-w-md ">
-
-              <div onClick={(e) => {
-                e.preventDefault();
-                window.scrollTo({
-                  top: document.querySelector("#about").offsetTop,
-                  behavior: "smooth",
-                });
-                cssChangerAbout();
-              }}
-                style={{ backgroundColor: bgColorAbout, transform: scaleCss1 }}
-                className="rounded-lg">
-                <ButtonView icon="AccountCircleIcon" buttonName="About" />
+        {/* <div id="nav" className="z-40 fixed xl:inset-x-1/4 max-w-lg md:py-16 xl:-ml-[270px] 2xl:-ml-[170px] invisible lg:visible"> */}
+        <div id="nav" className="z-40 fixed -mt-[45px]
+        2xl:inset-x-1/4 
+        2xl:-ml-[440px]
+        invisible lg:visible lg:max-w-md xl:max-w-xl 2xl:max-w-3xl xl:py-16">
+            <div className="px-8 py-2 lg:py-0">
+              <div className="invisible xl:visible">
+                <BackgroundBarAnimate />
               </div>
 
-              <div onClick={(e) => {
-                e.preventDefault();
-                window.scrollTo({
-                  top: document.querySelector("#experience").offsetTop,
-                  behavior: "smooth",
-                });
-                cssChangerExp();
-              }}
-                style={{ backgroundColor: bgColorExp, transform: scaleCss2 }}
-                className="rounded-lg">
-                <ButtonView icon="WorkHistoryIcon" buttonName="Experience" />
+              <HomeIntro />
+              <br />
+
+              <div className="grid grid-cols-4 gap-4 lg:max-w-lg xl:max-w-xl 2xl:max-w-3xl ">
+
+                <div onClick={(e) => {
+                  e.preventDefault();
+                  window.scrollTo({
+                    top: document.querySelector("#about").offsetTop,
+                    behavior: "smooth",
+                  });
+                  cssChangerAbout();
+                }}
+                  style={{ backgroundColor: bgColorAbout, transform: scaleCss1 }}
+                  className="rounded-lg">
+                  <ButtonView icon="AccountCircleIcon" buttonName="About" />
+                </div>
+
+                <div onClick={(e) => {
+                  e.preventDefault();
+                  window.scrollTo({
+                    top: document.querySelector("#experience").offsetTop,
+                    behavior: "smooth",
+                  });
+                  cssChangerExp();
+                }}
+                  style={{ backgroundColor: bgColorExp, transform: scaleCss2 }}
+                  className="rounded-lg">
+                  <ButtonView icon="WorkHistoryIcon" buttonName="Experience" />
+                </div>
+
+                <div onClick={(e) => {
+                  e.preventDefault();
+                  window.scrollTo({
+                    top: document.querySelector("#project").offsetTop,
+                    behavior: "smooth",
+                  });
+                  cssChangerProject();
+                }}
+                  style={{ backgroundColor: bgColorproject, transform: scaleCss3 }}
+                  className="rounded-lg">
+                  <ButtonView icon="TaskIcon" buttonName="Project" />
+                </div>
+
+                <div onClick={handleShow} >
+                  <ButtonView icon="SettingsIcon" buttonName="Language" />
+                </div>
+
               </div>
 
-              <div onClick={(e) => {
-                e.preventDefault();
-                window.scrollTo({
-                  top: document.querySelector("#project").offsetTop,
-                  behavior: "smooth",
-                });
-                cssChangerProject();
-              }}
-                style={{ backgroundColor: bgColorproject, transform: scaleCss3 }}
-                className="rounded-lg">
-                <ButtonView icon="TaskIcon" buttonName="Project" />
-              </div>
-
-              <div onClick={handleShow} >
-                <ButtonView icon="SettingsIcon" buttonName="Language" />
-              </div>
+              <Image />
+              <BtnSosmed />
 
             </div>
-
-            <Image />
-            <BtnSosmed />
-
-          </div>
         </div>
 
-        <div className="grid grid-rows-[auto] justify-center lg:ml-[480px] xl:ml-[650px] 2xl:ml-[800px]">
+        <div className="grid grid-rows-[auto] justify-center lg:ml-[410px] xl:ml-[540px] 2xl:ml-[740px] lg:-mt-[40px] xl:mt-[20px]">
           <div className="pt-16" id="about">
 
             <div className="mt-[300px] lg:mt-[0px] w-auto mx-8 my-2 rounded-xl max-w-5xl">
-              <IsiConentAbout />
+              <IsiConentAbout section="About" desc="desc_about" />
             </div>
           </div>
 
@@ -139,7 +144,7 @@ export default function Home() {
           <div id="experience" className="w-auto mx-8 my-2 p-8 rounded-xl bg-zinc-900 grid gap-4 grid-rows max-w-5xl">
 
             <div className="px-4 py-1 rounded-lg bg-zinc-900 bg-[linear-gradient(45deg,transparent_25%,rgba(100,100,100,.9)_50%,transparent_75%,transparent_100%)]  w-fit">
-              <h1 className="text-lg font-medium tracking-tight text-cyan-parent">Experience</h1>
+              <h1 className="text-lg font-medium tracking-tight text-cyan-parent">{t('Experience')}</h1>
             </div>
 
             <IsiConentExperience
@@ -148,8 +153,8 @@ export default function Home() {
               thnAwal=""
               thnAkhir="2019"
               position="Internship"
-              jobdesk="Developed interactive website apps for Department of Cooperatives, including the user interface of Cooperatives website used to record cooperative activities per three months with calculations calculated by the system"
-              company="Department of Cooperatives and Small and Medium Enterprises of Central Java"
+              jobdesk="umkm_desc"
+              company="umkm_t"
               show="Show Website"
               certificate=""
               link="https://dinkop-umkm.jatengprov.go.id/"
@@ -217,7 +222,7 @@ export default function Home() {
               thnAwal="2021"
               thnAkhir="Present"
               position="Freelance"
-              jobdesk="Developed, maintained, and shipped production code for client websites."
+              jobdesk="freelance_desc"
               company="Software Engineer"
               show=""
               certificate=""
@@ -262,7 +267,7 @@ export default function Home() {
               thnAwal="2022"
               thnAkhir="2023"
               position="IT Programmer"
-              jobdesk="Developed, maintained, and shipped production code for client website. Desktop apps maintenance & management. Database maintenance and data management. troubleshooting and maintenance software."
+              jobdesk="macanan_desc"
               company="PT Macananjaya Cemerlang"
               show="Show Website"
               certificate=""
@@ -306,8 +311,8 @@ export default function Home() {
               blnAkhir="January"
               thnAwal="2023"
               thnAkhir="2024"
-              position="Software Engineer"
-              jobdesk="Learn an intensive educational programs that focus on C# programming language, ASP.NET Core 7 framework and includes debugging techniques, entity framework, loggers, Unit testing and design patterns. practice exam for making games using c# and creating websites using ASP.NET."
+              position="Software Engineer - Bootcamp"
+              jobdesk="formulatrix_desc"
               company="PT Formulatrix"
               show="Show Website"
               certificate="Show Certificate"
@@ -355,16 +360,62 @@ export default function Home() {
               <h1 className="text-lg font-medium tracking-tight text-cyan-parent">Project</h1>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <IsiConentProject title="CV Deni (v.1)" description="My website CV and Portfolio version 1." show="Show Website" link="https://deniachmad.com/cv1/" />
-              <IsiConentProject title="CV Deni (v.2)" description="My website CV and Portfolio version 2." show="Show Website" link="https://deniachmad.com/cv2/" />
-              <IsiConentProject title="Saloka" description="Saloka website company profile. Test for applying for a job in Saloka, creating a company profile website for one week." show="Show Website" link="https://deniachmad.com/saloka/" />
-              <IsiConentProject title="SI Apotek" description="SI Apotek is an information system that is used for monitoring pharmacy data. System is also equipped with daily and periodical report features." show="Show Website" link="https://deniachmad.com/apotek/" />
-              <IsiConentProject title="SI Maiga" description="SI Maiga is an information system used for monitoring and determine student achievement, based on the average value of students which is calculated automatically by the system." show="Show Website" link="https://deniachmad.com/maiga/" />
-              <IsiConentProject title="SI SPK" description="SI SPK is a decision support system that is used to determine prospective recipients of the Family Hope Program (PKH) automatically by a system based on the SMART algorithm (Simple Multi Attribute Ratting Technique)." show="Show Website" link="https://deniachmad.com/spk/" />
-              <IsiConentProject title="SI Koperasi" description="SI Koperasi is a Cooperative Information System used to record cooperative activities per three months with calculations calculated by the system ." show="Show Website" link="https://deniachmad.com/koperasi/" />
-              <IsiConentProject title="SI Toko" description="SI Toko is an information system used in stores that aims to manage stock of goods, sales and purchasing of goods." show="Show Website" link="https://deniachmad.com/toko/" />
-              <IsiConentProject title="SI Motor" description="SI Motor is a Website-based Motorbike Rental Information System." show="Show Website" link="https://deniachmad.com/motor/" />
+              <IsiConentProject
+                title="CV Deni (v.1)"
+                description="My website CV and Portfolio version 1."
+                show="Show Website"
+                link="https://deniachmad.com/cv1/" />
+              <IsiConentProject
+                title="CV Deni (v.2)"
+                description="My website CV and Portfolio version 2."
+                show="Show Website"
+                link="https://deniachmad.com/cv2/" />
+              <IsiConentProject
+                title="Saloka"
+                description="Saloka website company profile. Test for applying for a job in Saloka, creating a company profile website for one week."
+                show="Show Website"
+                link="https://deniachmad.com/saloka/" />
+              <IsiConentProject
+                title="SI Apotek"
+                description="SI Apotek is an information system that is used for monitoring pharmacy data. System is also equipped with daily and periodical report features."
+                show="Show Website"
+                link="https://deniachmad.com/apotek/" />
+              <IsiConentProject
+                title="SI Maiga"
+                description="SI Maiga is an information system used for monitoring and determine student achievement, based on the average value of students which is calculated automatically by the system."
+                show="Show Website"
+                link="https://deniachmad.com/maiga/" />
+              <IsiConentProject
+                title="SI SPK"
+                description="SI SPK is a decision support system that is used to determine prospective recipients of the Family Hope Program (PKH) automatically by a system based on the SMART algorithm (Simple Multi Attribute Ratting Technique)."
+                show="Show Website"
+                link="https://deniachmad.com/spk/" />
+              <IsiConentProject
+                title="SI Koperasi"
+                description="SI Koperasi is a Cooperative Information System used to record cooperative activities per three months with calculations calculated by the system ."
+                show="Under maintenance"
+                link="https://deniachmad.com/koperasi/" />
+              <IsiConentProject
+                title="SI Toko"
+                description="SI Toko is an information system used in stores that aims to manage stock of goods, sales and purchasing of goods."
+                show="Under maintenance"
+                link="https://deniachmad.com/toko/" />
+              <IsiConentProject
+                title="SI Motor"
+                description="SI Motor is a Website-based Motorbike Rental Information System."
+                show="Under maintenance"
+                link="https://deniachmad.com/motor/" />
+              <IsiConentProject
+                title="MJC tools helpdesk"
+                description="MJC tools helpdesk is a website-based tool that is used to assist IT support in fixing problems related to data."
+                show="Under maintenance"
+                link="" />
             </div>
+            <IsiConentProject
+              title="MJC Customer"
+              description="MJC Customer is Information System to Monitor and Manage Customer Data in PT Macananjaya Cemerlang."
+              show="Under maintenance"
+              link="" />
           </div>
 
 

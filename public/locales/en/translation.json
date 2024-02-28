@@ -8,7 +8,13 @@
     "Choose Language":"Choose Language",
     "idn":"Indonesian",
     "en":"English",
-    "Cancel":"Cancel"
-    
-    
+    "Cancel":"Cancel",
+    "desc_about":"I started my journey as a software engineer starting from receiving small projects in the creation of websites and applications. Creating a website from scratch and creating new algorithms is a fun job for me because I can know new things and also new knowledge in programming. So I decided to continue my path as a software engineer.",
+    "umkm_desc":"Developed interactive website apps for Department of Cooperatives, including the user interface of Cooperatives website used to record cooperative activities per three months with calculations calculated by the system"
+    ,"umkm_t":"Department of Cooperatives and Small and Medium Enterprises of Central Java"
+    ,"freelance_desc":"Developed, maintained, and shipped production code for client websites"
+    ,"macanan_desc":"Developed, maintained, and shipped production code for client website. Desktop apps maintenance & management. Database maintenance and data management. troubleshooting and maintenance software."
+    ,"formulatrix_desc":"Learn an intensive educational programs that focus on C# programming language, ASP.NET Core 7 framework and includes debugging techniques, entity framework, loggers, Unit testing and design patterns. practice exam for making games using c# and creating websites using ASP.NET."
+    ,"Show Website":"Show Website"
+    ,"Show Certificate":"Show Certificate"
 }

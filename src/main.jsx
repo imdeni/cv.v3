@@ -13,6 +13,7 @@ import './i18n';
 const router = createBrowserRouter([
   {
     path: "/",
+    // production
     element: <Home />,
     errorElement: <ErrorPage />,
   }, 

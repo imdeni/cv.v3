@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { Icon } from '@iconify/react';
 // import Btns from "./buttonChild"
 export default function ContenctProject({ description, title, link, show }) {
 
@@ -20,7 +21,7 @@ export default function ContenctProject({ description, title, link, show }) {
             {/* <div className="xs:bg-red-500 sm:bg-yellow-500 md:bg-green-500 lg:bg-blue-500 xl:bg-purple-500 2xl:bg-pink-500 "> */}
             {/* <div className="grid grid-cols-[200px_minmax(auto,auto)] gap-4"> */}
             {/* <h3 className="mb-2 text-right text-lg font-medium tracking-tight text-neutral-400 text-justify">{t(blnAwal)} {t(thnAwal)} {until}{t(blnAkhir)} {t(thnAkhir)}</h3> */}
-            <div className="grid grid-rows-[auto_minmax(auto,auto)]">
+            <div className="grid grid-rows-[auto_minmax(auto,auto)] pb-[50px]">
                 <h3 className="mb-2 text-lg font-medium tracking-tight text-neutral-200 text-justify">{t(title)}</h3>
                 <h3 className="mb-2 text-lg font-medium tracking-tight text-neutral-400 text-justify">{t(description)}</h3>
                 {/* <div className="grid lg:grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-2 pt-2">
@@ -41,9 +42,18 @@ export default function ContenctProject({ description, title, link, show }) {
                         <Btns btnName={btn15} jumlahBars={bar15} />
                     </div> */}
             </div>
-            {show !== "" ? (
-                <div id="buttons" className="bg-zinc-900 border-2 border-neutral-400 rounded-lg max-w-[200px]">
+            {show === "Show Website" ? (
+                <div id="buttons" className="absolute inset-x-0 bottom-8 left-8 bg-zinc-900 border-2 border-neutral-400 rounded-lg max-w-[200px]">
                     <button id="x" onClick={openNewTab} className="bg-zinc-900 w-full text-neutral-400">{t(show)}</button>
+                </div>
+            ) : null
+            }
+            {show === "Under maintenance" ? (
+                <div id="buttons" className="absolute inset-x-0 bottom-8 left-8 bg-zinc-900 border-2 border-neutral-400 rounded-lg max-w-[200px]">
+                    <div className="grid grid-cols-[168px_minmax(auto,auto)]">
+                        <button id="x" className="bg-zinc-900 w-full text-neutral-400">{t(show)}</button>
+                        <Icon icon="material-symbols:lock-outline" className="w-6 h-6 my-2 bg-zinc-900 text-neutral-400" />
+                    </div>
                 </div>
             ) : null
             }

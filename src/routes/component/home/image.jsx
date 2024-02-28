@@ -19,8 +19,12 @@ import drIMG from "../../../assets/dr.png";
 
 export default function Image() {
     return (
-        <div className="grid grid-rows-2 gap-8">
-              <div className="grid grid-cols-2 gap-2 place-items-center">
+        <div className="grid grid-rows-2 2xl:gap-8 
+        lg:pb-2 xl:pb-20 2xl:pb-28
+        lg:ml-[60px] 2xl:ml-0
+        lg:-mt-[40px] xl:-mt-[40px] 2xl:-mt-[25px]">
+              <div className="grid grid-cols-2 2xl:gap-2 place-items-center 
+              ">
                 <div className="lg:py-16 changer">
                   <ImgSkill name={vueIMG} altname="vueIMG"/>
                   <ImgSkill name={viteIMG} altname="viteIMG"/>
@@ -34,7 +38,8 @@ export default function Image() {
                   <ImgSkill name={mysqlIMG} altname="mysqlIMG"/>
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-2 place-items-center">
+              <div className="grid grid-cols-2 gap-2 place-items-center 
+              lg:-mt-[40px] xl:-mt-[40px] 2xl:-mt-0">
                 <div className="lg:py-16 changer">
                   <ImgSkill name={twIMG} altname="twIMG"/>
                   <ImgSkill name={jsIMG} altname="jsIMG"/>

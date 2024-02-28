@@ -5,6 +5,8 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base:`/cv3/`,
+  // production
+  // comment base for local
   server: {
     port: 3003,
   },
