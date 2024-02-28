@@ -13,11 +13,11 @@ export default function ContentAbout({desc,section}) {
     hover:duration-[1000ms]">
 
             <div className="px-4 py-1 rounded-lg bg-zinc-800 bg-[linear-gradient(45deg,transparent_25%,rgba(100,100,100,.9)_50%,transparent_75%,transparent_100%)]  w-fit">
-                <h1 className="text-lg font-medium tracking-tight text-cyan-parent">{t(section)}</h1>
+                <h1 className="text-md lg:text-lg font-medium tracking-tight text-cyan-parent">{t(section)}</h1>
             </div><br />
 
             {/* <h3 className="mb-2 text-lg font-medium tracking-tight text-white">Hello!</h3> */}
-            <p className="text-lg text-slate-400 tracking-tight text-justify">{t(desc)}
+            <p className="text-md lg:text-lg text-slate-400 tracking-tight text-justify">{t(desc)}
             </p>
         </div>
     );

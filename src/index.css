@@ -448,13 +448,6 @@ i {
   animation-iteration-count: infinite;
   animation-duration: 10s;
 }
-.changerlg img {
-  margin-left: -70px;
-  animation-name: imagefade;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 10s;
-}
 
 .changer img:nth-of-type(1) {
   animation-delay: 7.5s;
@@ -512,7 +505,7 @@ i {
   margin: 0 auto;
   z-index: 2;
   position: relative;
-  left: -100px;
+  /* left: -100px; */
   right: 0;
 }
 
@@ -758,8 +751,8 @@ i {
 #boxanimated::before {
   content: "";
   background-image: conic-gradient(cyan 20deg, transparent 100deg);
-  width: 110%;
-  height: 250%;
+  width: 1000px;
+  height: 1000px;
   position: absolute;
   z-index: -100;
   animation: rotate 2.5s linear infinite;
@@ -768,7 +761,7 @@ i {
 #boxanimated::after {
   content: "";
   width: 97%;
-  height: 95%;
+  height: 91%;
   background: #404040;
   position: absolute;
   border-radius: 5px;

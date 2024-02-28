@@ -3,6 +3,7 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
 import TaskIcon from '@mui/icons-material/Task';
 import SettingsIcon from '@mui/icons-material/Settings';
+import BackspaceIcon from '@mui/icons-material/Backspace';
 import React, { useState } from "react";
 
 export default function Intro({ icon, buttonName }) {
@@ -12,7 +13,7 @@ export default function Intro({ icon, buttonName }) {
 
         <div className="lg:w-auto lg:h-[50px] xl:h-[70px]
         2xl:w-full 2xl:h-full 
-        buttons-shadow hover:cursor-pointer hover:scale-110 
+        buttons-shadow hover:cursor-pointer lg:hover:scale-110 
         grid grid-row-2 border border-neutral-400 text-neutral-400 
         xl:p-2 rounded-lg hover:text-white hover:border-white">
             <div className="flex justify-center">
@@ -53,6 +54,16 @@ export default function Intro({ icon, buttonName }) {
                         </p>
                         <p className="hidden 2xl:block">
                             <SettingsIcon sx={{ fontSize: 40 }} />
+                        </p>
+                    </div>
+                }
+                {icon == "BackspaceIcon" &&
+                    <div>
+                        <p className="block 2xl:hidden">
+                            <BackspaceIcon sx={{ fontSize: 25 }} />
+                        </p>
+                        <p className="hidden 2xl:block">
+                            <BackspaceIcon sx={{ fontSize: 40 }} />
                         </p>
                     </div>
                 }

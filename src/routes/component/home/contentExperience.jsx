@@ -25,12 +25,12 @@ export default function ContentExperience({ blnAwal, blnAkhir,
     hover:bg-[position:200%_0,0_0] 
     hover:duration-[1000ms]">
             {/* <div className="xs:bg-red-500 sm:bg-yellow-500 md:bg-green-500 lg:bg-blue-500 xl:bg-purple-500 2xl:bg-pink-500 "> */}
-            <div className="grid grid-cols-[200px_minmax(auto,auto)] gap-4">
-                <h3 className="mb-2 text-right text-lg font-medium tracking-tight text-neutral-400 text-justify">{t(blnAwal)} {t(thnAwal)} {until}{t(blnAkhir)} {t(thnAkhir)}</h3>
+            <div className="grid grid-cols-1 lg:grid-cols-[200px_minmax(auto,auto)] gap-4">
+                <h3 className="mb-2 text-right text-md lg:text-lg font-medium tracking-tight text-neutral-400 text-justify">{t(blnAwal)} {t(thnAwal)} {until}{t(blnAkhir)} {t(thnAkhir)}</h3>
                 <div className="grid grid-rows-[auto_minmax(auto,auto)]">
-                    <h3 className="mb-2 text-lg font-medium tracking-tight text-neutral-200 text-justify">{t(position)} {space}{t(company)}</h3>
-                    <h3 className="mb-2 text-lg font-medium tracking-tight text-neutral-400 text-justify">{t(jobdesk)}</h3>
-                    <div className="grid lg:grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-2 pt-2">
+                    <h3 className="mb-2 text-md lg:text-lg font-medium tracking-tight text-neutral-200 text-justify">{t(position)} {space}{t(company)}</h3>
+                    <h3 className="mb-2 text-md lg:text-lg font-medium tracking-tight text-neutral-400 text-justify">{t(jobdesk)}</h3>
+                    <div className="grid grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-2 pt-2">
                         <Btns btnName={btn1} jumlahBars={bar1} />
                         <Btns btnName={btn2} jumlahBars={bar2} />
                         <Btns btnName={btn3} jumlahBars={bar3} />
@@ -50,13 +50,13 @@ export default function ContentExperience({ blnAwal, blnAkhir,
                 </div>
                 {show !== "" ? (
                     <div id="buttons" className="bg-zinc-900 border-2 border-neutral-400 rounded-lg">
-                        <button id="x" onClick={openNewTab} className="bg-zinc-900 w-full text-neutral-400">{t(show)}</button>
+                        <button id="x" onClick={openNewTab} className=" text-xs lg:text-lg bg-zinc-900 w-full text-neutral-400">{t(show)}</button>
                     </div>
                 ) : null
                 }
                 {certificate !== "" ? (
                     <div id="buttons" className="bg-zinc-900 border-2 border-neutral-400 rounded-lg">
-                        <button id="x" onClick={openNewTab2} className="bg-zinc-900 w-full text-neutral-400">{t(certificate)}</button>
+                        <button id="x" onClick={openNewTab2} className=" text-xs lg:text-lg bg-zinc-900 w-full text-neutral-400">{t(certificate)}</button>
                     </div>
                 ) : null
                 }
